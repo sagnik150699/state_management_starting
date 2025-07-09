@@ -82,5 +82,5 @@ jobs:
       - uses: subosito/flutter-action@v2
         with:
           channel: stable
-          cache: true      - run: flutter build ios --no-codesign
-
+          cache: true
+      - run: flutter build ios --no-codesign
