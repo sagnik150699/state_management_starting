@@ -5,7 +5,7 @@
     "display": "standalone",
     "background_color": "#0175C2",
     "theme_color": "#0175C2",
-    "description": "A project ment to explain state management using provider and riverpod",
+    "description": "A Flutter project to server as companion for Udemy flutter course by Sagnik Bhattacharya",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [
