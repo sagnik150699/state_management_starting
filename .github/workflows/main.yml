@@ -26,6 +26,7 @@ jobs:
         uses: subosito/flutter-action@v2
         with:
           flutter-version: '3.32.5'
+          cache: true
       # Step 4: Flutter Configuration for Windows
       - name: Flutter Config
         run: flutter config --enable-windows-desktop
@@ -74,10 +75,12 @@ jobs:
     runs-on: macos-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: actions/setup-java@v1
+      - uses: actions/setup-java@v2
         with:
-          java-version: "17.x"
+          distribution: 'temurin'
+          java-version: '17'
       - uses: subosito/flutter-action@v2
         with:
           flutter-version: '3.32.5'
-      - run : flutter pub get      - run: flutter build ios --no-codesign
+          cache: true      - run: flutter build ios --no-codesign
+
